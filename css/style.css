@@ -1,0 +1,297 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Alegreya', serif;
+    scroll-behavior: smooth;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+.ff{
+    clear: both;
+}
+nav{
+    width: 100%;
+    background-color: white;
+    height: 70px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+
+}
+nav .container .img-div{
+    float: left;
+    width: 15%;
+}
+
+nav .container .img-div img{
+    width: 90%;
+}
+
+nav .container .menu{
+    float: right;
+}
+nav .container .menu .menu-item{
+    list-style: none;
+}
+nav .container .menu .menu-item li{
+    display: inline-block;
+    margin: 20px 5px;
+}
+
+nav .container .menu .menu-item li a{
+    color: grey;
+    text-decoration: none;
+    font-weight: bold;
+}
+nav .container .menu .menu-item li .active{
+    color: black;
+}
+nav .container .menu .menu-item li a:hover{
+    color: black;
+    cursor: pointer;
+}
+nav .container .menu ul .show{
+    position: relative;
+    transition: display 2s  ;
+}
+nav .container .menu ul .show .pop-up{
+    display: none;
+    background-color: #403d38;
+    color: white;
+    position: absolute;
+    top: 20px;;
+    left: 5px;
+    list-style: none;
+    padding: 10px 0px;
+}
+nav .container .menu ul .show .pop-up li{
+    display: block;
+    width: 200px;
+    padding: 10px 15px;
+    margin: 5px;
+    text-align: left;
+}
+nav .container .menu ul .show .pop-up li:hover{
+    background-color: #8e7754;
+    cursor: pointer;
+}
+
+.show:hover .pop-up{
+    display: block;
+    cursor: pointer;
+}
+nav .container .menu ul .show:hover .pop-up{
+    display: block;
+}
+/* ==================================== */
+main{
+    padding-top: 80px;
+    height: 90vh;
+    background-image: url(../img/main.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    margin: 0px;
+ }
+.msg{
+    margin-top: 150px;
+    color:white;
+    margin-bottom: 20px;
+    /* text-align: center;
+    position: absolute;
+    top:200px;
+    left:450px */
+}
+
+main .msg .wel,
+main .msg .fam
+{
+    text-transform: capitalize;
+    font-size: 50px;
+    font-weight: normal;
+}
+main .msg .fam{
+    font-size: 70px;
+}
+main .msg .p{
+    font-size: 25px;
+}
+main .btns .btn{
+    padding: 15px;
+    border-style: solid;
+    border-width: 2px ;
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 5px 10px;
+    border-radius: 5px;
+    transition: backgorund-color 0.3s,color 0.3s,border-color 0.3s;
+    cursor: pointer;
+}
+main .btns button{
+    background-color: #8e7754;
+    border-color: #8e7754;
+}
+main .btns .btn:hover{
+    background-color: white;
+    color: black;
+    border-color: white;
+}
+main .ball{
+    margin-top: 40px;
+} 
+main .ball a{
+    font-size: 40px;
+    color:white;
+    text-decoration: none;
+    border:2px solid white;
+    padding: 0px 7px;
+    border-radius: 14px;
+    height:55px;
+    display:inline-block;
+}
+/* ======================================= */
+.who{
+    background-color: white;
+    padding: 100px;
+}
+.who .img-div{
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+.who .img-div img{
+    width: 90%;
+}
+.who .words{
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+.ff{
+    clear: both;
+}
+.who .words h3{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.who .words p.info{
+    margin: 0px 0px 20px 0px;
+}
+.who .words p{
+    color: grey;
+    display: inline-block;
+    margin:20px 10px;
+}
+.who .circle{
+    padding:10px 20px;
+    border: 1px solid grey;
+    border-radius: 50%;
+}
+.ol{
+    background-color: whitesmoke;
+    padding: 100px; 
+       
+}
+.ol .img-div{
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+.ol .img-div img{
+    width: 90%;
+}
+.ol .words{
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+.ol .words h3{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.ol .words p{
+    color: grey;
+    display: inline-block;
+    margin:20px 10px;
+}
+.ob{
+    background-color: white;
+    padding: 100px; 
+}
+.ob .item{
+    width: 32%;
+    display: inline-block;
+    margin: auto;
+}
+.ob .item .img-div{
+    text-align: center;
+    margin: 10px 0px;
+}
+.ob .item .img-div img{
+    width: 90%;
+}
+.ob h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.ci{
+    background-color: whitesmoke;
+    padding: 100px; 
+}
+.ci .img-div{
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+.ci .img-div iframe{
+    width: 90%;
+}
+.ci .words{
+    width: 50%;
+    float: left;
+    text-align: left;
+}
+.ci .words h2{
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+.ci .words p{
+    color: grey;
+    display: inline-block;
+    margin:20px 10px;
+}
+.ci .circle{
+    background-color: #8e7754;
+    padding:10px 20px;
+    border: 1px solid #8e7754 ;
+    border-radius: 50%;
+}
+.su{
+    background-color: rgba(41, 40, 40, 0.5);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 999;
+    transition: background-color 1s;
+}
+.su a{
+    text-decoration: none;
+    text-align: center;
+    font-size: 40px;
+    margin-left: 14px;
+    color: white;
+}
+.su:hover{
+    background-color: black;
+    cursor: pointer;
+}
